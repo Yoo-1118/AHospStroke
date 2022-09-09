@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+
+project.ext {
+
+    // 버전코드는 여기에 설정하세요. 릴리즈와 업그레이드모두 
+    versionCode = 118
+    versionName = "02.10.49"
+    versionNameUpgrade = "02.10.50"
+    versionCodeUpgrade = versionCode +1
+
+}
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "or.kr.ajouhosp.stroke"
+        minSdkVersion 26
+        targetSdkVersion 29
+        ndk {
+            abiFilters 'arm64-v8a'//'armeabi-v7a'//,
+        }
+
+        versionCode project.ext.versionCode
+        versionName project.ext.versionName
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Java 8 지원을 위한 옵션
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+repositories {
+    // Depending on AndroidX Snapshot Builds to get the latest CameraX libs.
+    maven { url 'https://androidx.dev/snapshots/builds/6787662/artifacts/repository/' }
+
+    //차트
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    implementation 'com.google.mlkit:pose-detection-accurate:17.0.0'
+    implementation 'com.google.mlkit:pose-detection:17.0.0'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.guava:guava:17.0'
+
+    implementation "androidx.lifecycle:lifecycle-livedata:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.2.0"
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // CameraX
+    implementation "androidx.camera:camera-camera2:1.0.0-SNAPSHOT"
+    implementation "androidx.camera:camera-lifecycle:1.0.0-SNAPSHOT"
+    implementation "androidx.camera:camera-view:1.0.0-SNAPSHOT"
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+
+    // 카카오
+    implementation group: project.KAKAO_SDK_GROUP, name: 'usermgmt', version: project.KAKAO_SDK_VERSION
+
+    // 페이스북 SDK
+    compile 'com.facebook.android:facebook-android-sdk:4.+'
+
+    //네이버 로그인
+    implementation 'com.naver.nid:naveridlogin-android-sdk:4.2.6'   // import from jcenter
+
+    // naveridlogin dependencies
+    def android_x_version = "1.0.0"
+    implementation "androidx.appcompat:appcompat:$android_x_version"
+    implementation "androidx.legacy:legacy-support-core-utils:$android_x_version"
+    implementation "androidx.browser:browser:$android_x_version"
+    implementation "androidx.legacy:legacy-support-v4:$android_x_version"
+
+    //차트
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+}

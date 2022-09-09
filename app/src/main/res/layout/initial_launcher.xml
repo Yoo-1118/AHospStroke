@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    >
+
+    <!-- // added by JeonHC, for UI/UX Enhancenment MWC Logo Insert 2020.05.13 [[ -->
+    <ImageView
+        android:id="@+id/mwclogo1"
+        android:layout_width="88dp"
+        android:layout_height="42.6dp"
+        android:src="@drawable/group_11"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageView
+        android:id="@+id/mwclogo2"
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:src="@drawable/group_3"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="110.3dp"
+        />
+    <!-- // added by JeonHC, for UI/UX Enhancenment MWC Logo Insert 2020.05.13 ]] -->
+
+    <ImageView
+        android:id="@+id/anim_vr"
+        android:layout_width="98dp"
+        android:layout_height="127dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/anim_vr_frame" />
+    <ImageView
+        android:id="@+id/anim_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/anim_logo_frame"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        />
+</RelativeLayout>

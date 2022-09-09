@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">106.103.228.46</domain>
+        <domain includeSubdomains="true">106.103.227.205</domain>
+        <domain includeSubdomains="true">106.103.234.166</domain>
+        <domain includeSubdomains="true">llnwtrials.vo.llnwd.net</domain>
+        <domain includeSubdomains="true">arentcts.uplus.or.kr</domain>
+        <domain includeSubdomains="true">35.244.226.104</domain>
+        <domain includeSubdomains="true">lgarentdev.vo.llnwd.net</domain>
+        <domain includeSubdomains="true">lgarenttst.vo.llnwd.net</domain>
+    </domain-config>
+</network-security-config>

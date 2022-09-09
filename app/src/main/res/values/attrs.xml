@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AREntTextView">
+        <attr name="textStyle" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="AREntEditTextView">
+        <attr name="editTextFontStyle" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="AREntButton">
+        <attr name="buttonFontStyle" format="integer"/>
+    </declare-styleable>
+
+    <attr name="themeColorPrimary" format="reference"/>
+    <attr name="themeColorPrimaryDark" format="reference"/>
+    <attr name="themeColorAccent" format="reference"/>
+
+    <attr name="themeColorDivider" format="reference"/>
+    <attr name="themeColorTextLight" format="reference"/>
+    <attr name="themeColorTextGrey" format="reference"/>
+    <attr name="themeColorTextGrey2" format="reference"/>
+
+    <attr name="themeColorTextDialogBlack" format="reference"/>
+    <attr name="themeColorTextDialogGrey" format="reference"/>
+    <attr name="themeColorTextDialogHintGrey" format="reference"/>
+
+    <attr name="themeColorTextFAQLight" format="reference"/>
+    <attr name="themeColorTextFAQGrey" format="reference"/>
+    <attr name="themeColorTextFAQEditText" format="reference"/>
+    <attr name="themeColorBgFAQEditText" format="reference"/>
+
+    <attr name="themeColorNavBackground" format="reference"/>
+    <attr name="themeColorNavText" format="reference"/>
+    <attr name="themeColorNavTextSelected" format="reference"/>
+
+
+    <attr name="themeDrawableNaviHome" format="reference"/>
+    <attr name="themeDrawableNaviKeyword" format="reference"/>
+    <attr name="themeDrawableNaviMy" format="reference"/>
+    <attr name="themeDrawableNaviMyContents" format="reference"/>
+    <attr name="themeDrawableNaviSetting" format="reference"/>
+
+    <attr name="themeColorTextHomeTitle" format="reference"/>
+
+    <attr name="themeDrawableView" format="reference"/>
+    <attr name="themeDrawableLike" format="reference"/>
+    <attr name="themeDrawableReple" format="reference"/>
+
+    <attr name="themeDrawableLogo" format="reference"/>
+    <attr name="themeDrawableBack" format="reference"/>
+
+    <attr name="themeDrawableShare" format="reference"/>
+    <attr name="themeDrawableSend" format="reference"/>
+    <attr name="themeDrawableDot" format="reference"/>
+
+    <attr name="themeColorTextDescLight" format="reference"/>
+    <attr name="themeColorTextDescGrey" format="reference"/>
+
+    <attr name="themeDrawableMore" format="reference"/>
+    <attr name="themeDrawableOut" format="reference"/>
+
+    <attr name="themeColorTextReplyEdit" format="reference"/>
+    <attr name="themeColorReplyEditOutline" format="reference"/>
+
+    <attr name="themeDrawableLikeImage" format="reference"/>
+    <attr name="themeColorLikeOutline" format="reference"/>
+
+    <attr name="themeDrawableMoreReply" format="reference"/>
+
+    <attr name="themeColorDropDownBg" format="reference"/>
+
+    <attr name="themeColorRetryButtonBg" format="reference"/>
+
+    <attr name="themeColorBackground" format="reference"/>
+
+    <attr name="themeDrawableWifi" format="reference"/>
+
+    <attr name="themeColorBgDisable" format="reference"/>
+
+    <attr name="themeDrawableOnOffImage" format="reference"/>
+
+    <attr name="themeColorDialogBg" format="reference"/>
+
+    <attr name="themeDrawableCheckImage" format="reference"/>
+
+    <attr name="themeColorTextNickEditText" format="reference"/>
+
+    <attr name="themeColorTextReportEditText" format="reference"/>
+
+    <attr name="themeColorAgreeAllBg" format="reference"/>
+    <attr name="themeColorAgreeBg" format="reference"/>
+
+    <attr name="themeDrawableLikeButton" format="reference"/>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="progressbarColor" format="color" />
+        <attr name="progressbarBgColor" format="color" />
+        <attr name="progressBarThickness" format="dimension" />
+    </declare-styleable>
+
+</resources>

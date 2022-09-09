@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="font_style_extra_medium">21</integer>
+    <integer name="font_style_extra_bold">22</integer>
+</resources>

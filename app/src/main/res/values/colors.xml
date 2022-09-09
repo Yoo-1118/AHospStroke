@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="colorPrimary">#000000</color>-->
+    <!--<color name="colorPrimaryDark">#424242</color>-->
+    <!--<color name="colorAccent">#e83c5a</color>-->
+
+
+    <!-- new -->
+
+
+    <!--!!!!!! old ( 삭제될 예정 )-->
+
+
+    <!--<color name="text_title">#ffffff</color>-->
+    <!--<color name="text_desc">#ffffff</color>-->
+
+
+    <!--<color name="text_setting_desc">#777777</color>-->
+
+    <color name="black_three">#222222</color>
+    <color name="black_two">#333333</color>
+    <color name="ok_button_background">#e83c5a</color>
+    <color name="rouge">#ad273e</color>
+    <color name="brown_grey">#999999</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mainBgColor">#1a1a1a</color>
+    <color name="colorBlack">#000000</color>
+    <color name="bottomColor">#121212</color>
+    <color name="mainTopStatusBar">#ffffff</color>
+    <color name="vrYellow">#ffc000</color>
+    <color name="status_hearing">#7B1FA2</color>
+    <color name="status_not_hearing">#757575</color>
+    <color name="custom_coupon_press">#b28700</color>
+    <color name="custom_coupon_nor">#ffc100</color>
+    <color name="webtoon_dim">#8C000000</color>
+    <color name="webtoon_no_dim">#00ffffff</color>
+    <color name="myllist_item_title">#E6ffffff</color>
+    <color name="mylist_item_date">#99ffffff</color>
+    <drawable name="layout_selector_color_nor">#282828</drawable>
+    <drawable name="layout_selector_color_foc">#ffc000</drawable>
+    <color name="sub_btn">#ffc100</color>
+    <color name="sub_btn_p">#b28700</color>
+    <color name="search_wt_notice_text">#99ffffff</color>
+    <color name="search_wt_notice">#99ffffff</color>
+    <color name="payment_content_color">#B3ffffff</color>
+    <color name="subscription_list_item_title">#E6ffffff</color>
+    <color name="subscription_list_item_alert_delete">#ffc000</color>
+    <color name="scrollbar">#997d7d7d</color>
+    <color name="scrollbarBg">#4D7d7d7d</color>
+</resources>
